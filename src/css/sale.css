@@ -1,0 +1,474 @@
+body {
+    font-family: "Gilroy", sans-serif;
+
+}
+
+img {
+    display: block;
+
+    height: auto;
+}
+
+ul {
+
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+li {
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+span {
+    margin: 0;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*@media screen and (min-width: 768px) {
+    .email-tel {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .email-tel {
+        font-size: 16px;
+    }
+}*/
+
+iv {
+    border: 1px solid black;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .content {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .main {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .main {
+        margin: 0 auto;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        max-width: 1280px;
+
+        display: flex;
+    }
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.sale-htwo {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 0.91667;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    /*margin-bottom: 40px;*/
+
+}
+
+
+
+.sale-htwo-div {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .sale-htwo {
+        /*margin-left: 65px;*/
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sale-htwo-div {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-htwo-div {
+        max-width: 1280px;
+    }
+
+    .sale-htwo {
+        margin-left: 65px;
+    }
+
+}
+
+/*--------------------small-watch-----------------------------------------------------------------------*/
+.small-watch-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .small-watch-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.small-watch-li {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .small-watch-li {
+        width: 132px;
+        height: 132px;
+    }
+}
+
+
+.small-watch-li:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+    .small-watch-div img {
+        width: 96px;
+        height: 100px;
+    }
+}
+
+/*--------------------/small-watch-----------------------------------------------------------------------*/
+
+/*--------------------big-watch-----------------------------------------------------------------------*/
+
+.big-watch-div {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    width: 335px;
+    height: 385px;
+    background: #f3f3f3;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .big-watch-div {
+        border: 1px solid rgba(12, 12, 12, 0.05);
+        border-radius: 50px;
+        width: 552px;
+        height: 558px;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .big-watch-div img {
+        width: 328px;
+        height: 398px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .big-watch-div {
+        border: 1px solid rgba(12, 12, 12, 0.05);
+        border-radius: 50px;
+        width: 428px;
+        height: 558px;
+        background: #f3f3f3;
+        margin-left: 20px;
+    }
+}
+
+/*--------------------/big-watch-----------------------------------------------------------------------*/
+
+/*--------------------info-----------------------------------------------------------------------*/
+
+.info-div {
+    background: #3350e9;
+    border-radius: 50px;
+    width: 335px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .info-div {
+        width: 704px;
+        margin: 0;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .info-div {
+        max-width: 530px;
+        margin: 0 auto;
+        margin-left: 0px;
+    }
+}
+
+.info-block {
+    margin-top: 48px;
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .info-block {
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-right: 81px;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+
+
+
+.h-three {
+    max-width: 279px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+    .h-three {
+        max-width: 463px;
+        justify-content: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .h-three {
+
+        font-size: 32px;
+        line-height: 1.125;
+        /*  letter-spacing: -0.02em;
+         color: #fbfbfb;*/
+        max-width: 436px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .h-three {
+
+        max-width: 389px;
+    }
+}
+
+.product-number-p {
+    margin-top: 10px;
+    font-weight: 400;
+
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.price-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.price-p {
+    width: 78px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    border-radius: 8px;
+    background: rgba(251, 251, 251, 0.1);
+    align-items: center;
+
+    justify-content: center;
+    display: flex;
+
+}
+
+.old-price-span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.02em;
+    text-decoration: line-through;
+    color: rgba(251, 251, 251, 0.5);
+    margin: 9px;
+
+}
+
+.text-p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.7);
+    margin-top: 30px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .text-p {
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        color: rgba(251, 251, 251, 0.7);
+        font-family: "Gilroy", sans-serif;
+
+    }
+
+}
+
+
+
+.point-div {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    width: 279px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .point-div {
+        width: 398px;
+
+    }
+}
+
+.point-ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.point-li {
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+
+}
+
+.point-li:hover {
+    background: rgba(251, 251, 251, 0.1);
+}
+
+.point-a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33333;
+    color: #fbfbfb;
+}
+
+
+@media screen and (min-width: 768px) {
+    .point-a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.28571;
+        color: #fbfbfb;
+    }
+}
+
+/*--------------------/info-----------------------------------------------------------------------*/
+
+.info-div-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
