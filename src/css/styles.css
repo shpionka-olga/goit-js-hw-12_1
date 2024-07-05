@@ -6,12 +6,11 @@
 */
 @import url('./reset.css');
 
-body{
-  font-family: "Montserrat", sans-serif;
-}
-.header{
+
+.header {
   padding: 30px;
 }
-.nav-item{
+
+.nav-item {
   margin-bottom: 10px;
 }
