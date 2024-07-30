@@ -12,5 +12,5 @@ import{i as m,S as p}from"./assets/vendor-8c59ed88.js";(function(){const o=docum
              ${y(t)}
              </ul> 
         </a>
-    </li>`).join("");n(),C.innerHTML=o,d()}else n(),m.error(l)},c=document.querySelector(".search-form"),L=document.querySelector(".gallery");c.addEventListener("submit",e=>{e.preventDefault();const o=c.search.value.trim();o?(L.innerHTML="",n(),u(o).then(t=>h(t)).catch(t=>console.log("Error "+t))):(l.message="Fill search field",m.error(l))});
+    </li>`).join("");n(),C.innerHTML=o,d()}else n(),m.error(l)},c=document.querySelector(".search-form"),L=document.querySelector(".gallery");c.addEventListener("submit",e=>{e.preventDefault(),L.innerHTML="";const o=c.search.value.trim();o?(n(),u(o).then(t=>h(t)).catch(t=>console.log("Error "+t))):(l.message="Fill search field",m.error(l))});
 //# sourceMappingURL=commonHelpers.js.map
