@@ -10,12 +10,12 @@ const galleryEl = document.querySelector(".gallery");
 
 searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    galleryEl.innerHTML = "";
     const searchRequest = searchForm.search.value.trim();
     if (!searchRequest) {
         iziToastOptions.message = `Fill search field`;
         iziToast.error(iziToastOptions);
     } else {
-        galleryEl.innerHTML = "";
         toggleLoader();
         fetchImages(searchRequest)
             .then((json) => renderImages(json))
