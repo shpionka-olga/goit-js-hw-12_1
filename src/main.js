@@ -5,6 +5,7 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 const searchForm = document.querySelector(".search-form");
+const galleryEl = document.querySelector(".gallery");
 
 
 searchForm.addEventListener("submit", (event) => {
@@ -14,6 +15,7 @@ searchForm.addEventListener("submit", (event) => {
         iziToastOptions.message = `Fill search field`;
         iziToast.error(iziToastOptions);
     } else {
+        galleryEl.innerHTML = "";
         toggleLoader();
         fetchImages(searchRequest)
             .then((json) => renderImages(json))

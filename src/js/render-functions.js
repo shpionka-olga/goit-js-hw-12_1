@@ -79,7 +79,6 @@ export const renderImages = (data) => {
         galleryEl.innerHTML = markup;
         initSimpleLightbox();
     } else {
-        galleryEl.innerHTML = "";
         toggleLoader();
         iziToast.error(iziToastOptions);
     }
