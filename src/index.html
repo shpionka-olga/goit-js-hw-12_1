@@ -4,27 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="./1-gallery.html" class="nav-link">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a href="./2-form.html" class="nav-link">Form</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <section class="section-form">
+    <form class="search-form" autocomplete="off">
+      <label>
+        <input type="search" name="search" autofocus placeholder="Search images..." />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  <section class="section-gallery">
+    <span class="loader"></span>
+    <ul class="gallery"></ul>
+  </section>
+
+  <script type="module" src="./main.js" defer></script>
 </body>
 
 </html>

@@ -29,11 +29,6 @@ feedbackForm.addEventListener("submit", (event) => {
         formData.message = "";
         feedbackForm.reset();
     }
-
-
-
-
-
 });
 
 window.addEventListener('load', function (event) {
