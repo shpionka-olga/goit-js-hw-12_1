@@ -19,7 +19,10 @@ searchForm.addEventListener("submit", (event) => {
         toggleLoader();
         fetchImages(searchRequest)
             .then((json) => renderImages(json))
-            .catch((error) => console.log("Error " + error));
+            .catch((error) => {
+                iziToastOptions.message = error;
+                iziToast.error(iziToastOptions);
+            });
     }
 });
 
