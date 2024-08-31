@@ -121,10 +121,30 @@
   }
 }
 
-.is-visible{
-  display: block;
+/* ---------Loader styles-------------- */
+.load-more-btn {
+  display: none;
+  margin: auto;
+
+  align-self: flex-start;
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+    
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.is-visible {
+  display: block;
+}
 /* ----------- Gallery styles---------- */
 
 .gallery {

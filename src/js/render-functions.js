@@ -37,31 +37,31 @@ const capitalizeFirstLetter = (string) => {
     return `${first.toUpperCase()}${rest.join('')}`;
 };
 
-export const toggleLoader = () => {
-    const loader = document.querySelector(".loader");
-    loader.classList.toggle("is-visible");
-}
-
-
-const generateDescriptionItems = (hit) => {
-    const descriptionData = {
-        likes: hit.likes,
-        views: hit.views,
-        comments: hit.comments,
-        downloads: hit.downloads,
-    };
-    return Object.keys(descriptionData).map(key =>
-        `<li class= "description-item">
-        <h2 class = "property-title">${capitalizeFirstLetter(key)}</h2>
-        <p class = "property-value"> ${descriptionData[key]}</p>
-        </li>`).join("");
+export const toggleVisibility = (elementClassName, isVisible) => {
+    const element = document.querySelector(elementClassName);
+    if (element) {
+        element.classList.toggle("is-visible", isVisible);
+    }
 };
 
+const generateDescriptionItems = ({ likes, views, comments, downloads }) =>
+    Object.entries({ likes, views, comments, downloads })
+        .map(([key, value]) => `
+            <li class="description-item">
+                <h2 class="property-title">${capitalizeFirstLetter(key)}</h2>
+                <p class="property-value">${value}</p>
+            </li>
+        `).join("");
+
 export const renderImages = (data) => {
-    if (parseInt(data.totalHits) > 0) {
-        const markup = data.hits
-            .map((hit) => {
-                return `<li class="gallery-item">
+    if (data.totalHits == 0) {
+        toggleVisibility(".loader", false);
+        iziToast.error(iziToastOptions);
+        return data;
+    }
+    const markup = data.hits
+        .map((hit) => {
+            return `<li class="gallery-item">
         <a class="gallery-link" href="${hit.largeImageURL}">
             <img class="gallery-image"
                 src="${hit.webformatURL}"
@@ -73,15 +73,22 @@ export const renderImages = (data) => {
              </ul> 
         </a>
     </li>`
-            })
-            .join("");
-        toggleLoader();
-        galleryEl.innerHTML = markup;
-        initSimpleLightbox();
-    } else {
-        toggleLoader();
-        iziToast.error(iziToastOptions);
-    }
-
+        })
+        .join("");
+    toggleVisibility(".loader", false);
+    galleryEl.insertAdjacentHTML("beforeend", markup);
+    initSimpleLightbox();
+    return data;
 };
+
+export const scrollDownGallery = () => {
+    const img = document.querySelector(".gallery-image");
+    let height = img.getBoundingClientRect().height;
+    window.scrollBy({
+        top: 2 * (height),
+        behavior: "smooth",
+    });
+};
+
+
 
